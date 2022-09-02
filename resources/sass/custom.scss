@@ -1,0 +1,106 @@
+.my-shadow {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    -webkit-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main-nav {
+    top: 0;
+    z-index: 1500 !important;
+}
+
+.main-footer {
+    bottom: 0;
+    z-index: 1500 !important;
+}
+
+.main-div {
+    margin-top: 97px;
+}
+
+.bg-alpha {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header-div {
+    min-height: 200px;
+}
+
+#rand-img {
+    max-width: 200px;
+    bottom: 60px;
+    right: 10px;
+}
+
+@media only screen and (min-width:768px) {
+    .menu-div {
+        width: 300px;
+        margin-right: 10px;
+    }
+    .content-div {
+        width: calc(100% - 310px);
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    #register-logo {
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .menu-div {
+        width: 100%;
+    }
+    .content-div {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    #register-logo {
+        position: absolute;
+        bottom: -40px;
+        right: -25px;
+    }
+}
+
+.link-hover {
+    transition: all 200ms;
+}
+
+.link-hover:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.news-content img {
+    max-width: 100% !important;
+}
+
+.card-img-to {
+    width: auto !important;
+    max-height: 100% !important;
+    object-fit: cover;
+}
+
+.news-hover:hover {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
+}

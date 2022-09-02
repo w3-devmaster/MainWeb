@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Taviraj&display=swap');
+.thai {
+    font-family: 'Taviraj', serif;
+    // font-weight: 400;
+    // font-size: 1rem;
+}
+
+.en {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+}
+
+.tahoma,
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=date],
+input[type=time],
+input[type=file] {
+    font-family: Arial, Tahoma !important;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+@for $i from 8 to 36 {
+    .f-#{$i} {
+        font-size: #{$i*0.06}rem !important;
+    }
+}
